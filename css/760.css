@@ -1,0 +1,52 @@
+#divEjer{
+overflow: hidden;
+width: 98%;
+border: 12px solid rgba(30, 115, 223, 0.84);
+border-radius: 12px;
+background: rgba(255, 255, 255, 0.47);
+height: 32em;
+position: relative;
+}
+#contenidoNombreNinno {
+width: 81%;
+height: 30em;
+border-radius: 8px;
+margin-left: 7%;
+margin-top: 0%;
+background: rgba(32, 125, 243, 0.58);
+position: relative;
+overflow: hidden;
+color: rgb(255, 255, 255);
+border: 10px solid rgba(32, 125, 243, 0.58);
+}
+
+#conteDescuentos {
+width: 80%;
+overflow: hidden;
+height: 33em;
+margin-left: 10%;
+border: 9px solid rgb(46, 52, 192);
+border-radius: 17px;
+background: rgba(255, 255, 255, 0.75);
+font-family: Arial;
+font-weight: bold;
+color: #fff;
+position: relative;
+}
+.listaDescuentos h3, .listaDescuentos p {
+width: 90%;
+max-height: 44px;
+margin-left: 5%;
+font-size: 1em;
+}
+#eventoEmba1 #divBtncalcular .contVolver {
+width: 21%!important;
+display: block!important;
+margin: 7px auto!important;
+float: none;
+}
+#imagenNacido p {
+margin: 7% auto;
+width: 46%;
+padding-left: 11%;
+}

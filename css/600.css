@@ -1,0 +1,746 @@
+* {
+padding: 0;
+margin: 0;
+text-decoration:none;
+list-style-type:none;
+box-shadow: 0 0 0 0;
+}
+body {
+background: #000;
+font-size:arial;
+}
+.mask{
+position: absolute;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.41);
+z-index: 999;
+color: #fff;
+font-size: 2em;
+}
+#objninno{
+display:none;
+}
+#tabinfo {
+display: block;
+margin-bottom: 0px;
+height: 35px;
+}
+#tabinfo li{
+float:left;
+width:50%;
+}
+.mask span{
+width: 100%;
+display: block;
+text-align: center;
+}
+p{
+color: rgb(247, 11, 11);
+font-weight: bold;
+font-size: 1.5em;
+position: relative;
+}
+input[type="text"], select{
+border: 8px solid rgb(32, 102, 228);
+border-radius: 7px;
+}
+#pagInicio,
+#TemasSemanales,#TemasEmbarazo,
+#Descuentos,#juegos,
+#eventoEmba2,#eventoEmba3,
+#listaDeNombreBB1,#listaDeNombreBB2,
+#infosolicitada,#caminar,#natacion,#yoga,#pilates,#kegel,#bicicleta,#pelota,#aerobicos,#bailar{
+width: 100%;
+height: 100%;
+/*position: relative;*/
+position: fixed;
+background: url(../img/backgr.jpg) no-repeat;
+min-height: 480px;
+
+background-size: 100% 100%;
+}
+ #pagInfoSemanal,#eventoEmba1{
+ background: url(../img/backgr.jpg) no-repeat;
+ background-size: 100% 100%;
+ }
+ label.ui-select{
+ color: #0080B9!important;
+ }
+.footer{
+width: 100%!important;
+height: 6em!important;
+margin-bottom: 0px!important;
+position: absolute!important;
+bottom: 0px!important;
+}
+/*
+.ui-select .ui-btn select {
+cursor: pointer!important;
+-webkit-appearance: none!important;
+left: 0!important;
+top:0px!important;
+width: 100%!important;
+min-height: 1.5em!important;
+min-height: 100%!important;
+height: 3em!important;
+max-height: 100%!important;
+filter: Alpha(Opacity=0)!important;
+opacity: 0!important;
+z-index: 3!important;
+position: absolute!important;
+
+}/*
+.ui-select .ui-btn select { cursor: pointer; -webkit-appearance: none; top: 0;
+left: 0; width: 100%; min-height: 1.5em; min-height: 100%; height: 3em; max-height: 100%; filter: Alpha(Opacity=0); opacity: 0; z-index: 2; }
+#eventoEmba1 .ui-select .ui-btn   select { cursor: pointer; -webkit-appearance: none; top: 200px;left: 0px; width: 100%; min-height: 1.5em; min-height: 100%; height: 3em; max-height: 100%; filter: Alpha(Opacity=0); opacity: 0; z-index: 2;}
+*/
+.footer a{
+background: rgba(255, 255, 255, 0);
+border: none;
+box-shadow: 0 0 0 0!important;
+width: 30%;
+}
+.footer span{
+box-shadow: 0 0 0 0;
+border: none;
+padding: 0;
+margin: 0;
+}
+.footer img{
+margin-left: 0px;
+width: 80%;
+
+}
+.ui-bar-a{
+border:none!important;
+background:none!important;
+}
+#contenidoPrincipal,#contenidoGeneralnfo{
+margin: 0px;
+padding: 0px;
+}
+#objFormulario{
+width: 100%;
+height: auto;
+position: relative;
+}
+#divtopforminfosemanal{
+width: 100%;
+height: auto;
+position: relative;
+}
+#divtopforminfosemanal p {
+color: rgb(247, 11, 11);
+font-weight: bolder;
+font-size: 26px!important;
+position: relative;
+text-shadow: 0px 0px 3px #FFFFFF;
+}
+#divtopforminfosemanal .ui-btn ,
+#divtopforminfosemanal.ui-shadow ,
+#divtopforminfosemanal .ui-btn-corner-all ,
+#divtopforminfosemanal .ui-btn-icon-right ,
+#divtopforminfosemanal .ui-btn-up-c{
+width: 99%;
+min-height: 51px;
+margin: 0;
+border-radius: 4px;
+
+}
+#divCiclo{
+width: 100%;
+background: rgba(255, 255, 255, 0.54);
+height: 8em;
+position: relative;
+}
+#divtopforminfosemanal #divCiclo  p {
+color: #90A83D;
+text-shadow: 0px 0px 3px rgba(255, 255, 255, 0);
+width: 282px;
+float: left;
+margin-left: 40px;
+margin-top: 15px;
+}
+#selectsemanas {
+width: 21%;
+float: left;
+min-height: 54px;
+margin-top: 2%;
+margin-left: 15px;
+border: 7px solid #0E46D6;
+border-radius: 12px;
+background: rgba(245, 242, 242, 0.6);
+}
+#objninno{
+width: 100%;
+height: 16em;
+position: relative;
+margin-top: 0.5em;
+}
+#objninno #nacido{
+width: 100%;
+background: rgba(255, 255, 255, 0.54);
+height: 14em;
+position: relative;
+}
+#objninno #nacido p{
+color:#0080B9!important;
+}
+#divnombreNinno{
+width: 100%;
+height: 8em;
+}
+#divinputnom{
+width: 65%;
+min-height: 7em;
+float: left;
+position: relative;
+text-align: center;
+}
+#objninno p:first-child {
+color: rgb(247, 11, 11);
+font-weight: bolder;
+font-size: 26px!important;
+position: relative;
+text-shadow: 0px 0px 3px #FFFFFF;
+}
+#divinputnom div
+{
+border: 5px solid #F01414;
+height: 40px;
+padding: 0;
+margin: 0px;
+}
+#divselectsexo{
+width: 34%;
+min-height: 6em;
+float: left;
+position: relative;
+text-align: center;
+}
+#selecDivGen{
+width: 90%;
+min-height: 40px;
+margin-left: 5%;
+border: 5px solid #F01414;
+border-radius: 12px;
+padding: 0px;
+position: relative;
+}
+#selecDivGen .ui-btn ,
+#selecDivGen.ui-shadow ,
+#selecDivGen .ui-btn-corner-all ,
+#selecDivGen .ui-btn-icon-right ,
+#selecDivGen .ui-btn-up-c{
+width: 99%;
+height: 38px;
+margin: 0;
+border-radius: 7px;
+}
+#divdianinno{
+width: 33%;
+min-height: 100px;
+float: left;
+text-align: center;
+position: relative;
+}
+#divmesesninno{
+width: 33%;
+min-height: 100px;
+float: left;
+text-align: center;
+position: relative;
+}
+#divannonino{
+width: 33%;
+min-height: 100px;
+float: left;
+text-align: center;
+position: relative;
+}
+#fechasDeNacimientoNinno{
+width: 100%;
+height: 6em;
+float: left;
+position: relative;
+text-align: center;
+}
+#fechasDeNacimientoNinno .ui-btn ,
+#fechasDeNacimientoNinno.ui-shadow ,
+#fechasDeNacimientoNinno .ui-btn-corner-all ,
+#fechasDeNacimientoNinno .ui-btn-icon-right ,
+#fechasDeNacimientoNinno .ui-btn-up-c{
+width: 99%;
+height: 38px;
+margin: 0;
+border-radius: 7px;
+}
+.combobox{
+width: 70%;
+min-height: 40px;
+margin-left: 13%;
+border: 5px solid #90A83D;
+border-radius: 12px;
+padding: 0px;
+}
+#nacido .combobox{
+width: 120px;
+height: 40px;
+margin-left: 37px;
+border: 5px solid #F01414;
+border-radius: 12px;
+padding: 0px;
+}
+#nacido .combobox{
+width: 90%;
+height: 40px;
+margin-left: 5%;
+border: 5px solid #F01414;
+border-radius: 12px;
+padding: 0px;
+}
+
+
+/*
+.combobox{
+width: 94%;
+height: auto;
+margin-left: 0px;
+padding: 0px;
+
+}
+*/
+#infoSolicitadasemanal ul{
+font-size: 2em;
+}
+.botones{
+width: 100%;
+height: 8em;
+float: left;
+text-align: center;
+}
+#enviar{
+/*background:url(../img/btnEnviar.png);*/
+width: 30%;
+float: left;
+}
+#facebook{
+/*background:url(../img/btnfacebook.png);*/
+width: 30%;
+
+float: left;
+}
+#infoSolicitadasemanal{
+width: 75%;
+height: 22em;
+border: 10px solid #002CDB;
+border-radius: 15px;
+background: rgba(255, 255, 255, 0.63);
+margin-left: 11%;
+}
+#infoSolicitadasemanal ul{
+border: none;
+box-shadow: 0 0 0 0;
+}
+.contVolver{
+float: left;
+margin-top: 10px;
+}
+.volverformulario{
+float: left;
+margin-left: 15%;
+margin-right: 37px;
+margin-top: 10px;
+}
+#TemasSemanales .contVolver {
+float: left;
+margin-top: 12px;
+width: 18%;
+}
+#tituloTemaSemana h2 {
+font-size: 1.7em!important;
+}
+#titutiempo{
+width: 100%;
+border-bottom: 1px solid;
+text-align: center;
+}
+#tituloTemaSemana{
+background: #F1532B;
+width: 100%;
+height: 4em;
+text-align: center;
+padding-top: 20px;
+color: #FFF;
+border-radius: 12px;
+text-shadow: 0 0 0;
+}
+#contenidoTemaSemana{
+border: 10px solid #FC7B33;
+border-radius: 12px;
+margin-top: 12px;
+height: 20em;
+background: rgba(255, 255, 255, 0.79);
+position: relative;
+color: rgba(12, 11, 11, 0.9)!important;
+}
+#contenidoTemaSemana p, #contenidoTemaSemana li{
+
+color: rgba(12, 11, 11, 0.9)!important;
+}
+#contenidoTemaSemana ul{
+margin-top: 0;
+border:none;
+box-shadow: 0 0 0 0;
+}
+#botonesTEmas{
+width: 100%;
+height: 4em;
+}
+#comentar,#incluir{
+width: 30%;
+float: left;
+margin-top: 7px;
+}
+#listaAcTemasEmba{
+width: 90%;
+border: 9px solid rgba(238, 74, 218, 0.95);
+border-radius: 12px;
+padding-left: 6px;
+padding-right: 6px;
+background: rgba(255, 255, 255, 0.57);
+margin: 4%;
+}
+#contenidoDiaNacimiento{
+border: 9px solid #EB5656;
+background: rgba(255, 255, 255, 0.33);
+border-radius: 12px;
+}
+#objcalculo{
+width: 100%;
+height: 8em;
+}
+#contenidoDiaNacimiento select{
+cursor: pointer;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+-ms-filter: "alpha(opacity=0)";
+filter: alpha(opacity=0);
+}
+#objcalculo #divdianinno,#objcalculo #divmesesninno,#objcalculo #divannonino{
+
+width: 30%;
+height: auto;
+text-align: center;
+}
+#objcalculo .ui-btn ,
+#objcalculo.ui-shadow ,
+#objcalculo .ui-btn-corner-all ,
+#objcalculo .ui-btn-icon-right ,
+#objcalculo .ui-btn-up-c{
+width: 99%;
+height: 38px;
+margin: 0;
+border-radius: 7px;
+}
+#imagenNacido{
+width: 93%;
+height: auto;
+float: left;
+margin-left: 0%;
+font-size: 1em;
+position: relative;
+}
+#imagenNacido img{
+width: 22%;
+float: left;
+height: 100%;
+}
+#imagenNacido p{
+margin: 0 auto;
+width: 46%;
+padding-left: 11%;
+}
+#divBtncalcular{
+margin-left: 13%;
+width: 68%;
+}
+#divEjer{
+overflow: hidden;
+width: 100%;
+border: 12px solid rgba(30, 115, 223, 0.84);
+border-radius: 12px;
+background: rgba(255, 255, 255, 0.47);
+height: 24em;
+position: relative;
+}
+.ejer{
+border: 10px solid rgb(118, 216, 52);
+float: left;
+border-radius: 11px;
+background: rgba(255, 255, 255, 0.71);
+width: 88%;
+padding-left: 5%;
+padding-right: 5%;
+}
+.ejer p{
+color:#000!important;
+}
+
+#scrollerejerci{
+width: 96%;
+}
+#scrollerejerci li{
+height: auto;
+width: 80%;
+margin-bottom: 3px;
+}
+#scrollerejerci ul{
+margin-left: 43px;
+}
+#scrollerejerci ul li img{
+height: auto;
+width: 100%;
+}
+
+#ninno, #ninna{
+width: 43%;
+float: left;
+height: auto;
+background: rgba(255, 255, 255, 0.37);
+border: 4px solid rgb(174, 49, 233);
+border-radius: 14px;
+margin-left: 3%;
+margin-top: 12%;
+
+}
+#ninno img, #ninna img{
+width: 44%;
+float: left;
+margin-left: 31%;
+} 
+#ninna img{
+margin-bottom: 11%;
+margin-top: 6%;
+margin-right: 25%;
+}
+#ninno img{
+margin-bottom: 11%;
+margin-top: 3%;
+margin-right: 25%;
+}
+#ninno{
+border: 4px solid rgb(0, 133, 255);
+}
+/***agregado respaldo***/
+.listaDeNombreBB {
+width: 87%;
+overflow: hidden;
+overflow-y: scroll;
+height: 394px;
+margin-left: 6%;
+border: solid rgb(175, 46, 192);
+border-radius: 17px;
+background: rgba(183, 68, 199, 0.72);
+font-family: Arial;
+font-weight: bold;
+color: #fff;
+overflow:hidden;
+-webkit-overflow-scrolling: touch;
+}
+#ninoNombres{
+width: 87%;
+overflow: hidden;
+overflow-y: scroll;
+height: 394px;
+margin-left: 6%;
+border: solid rgb(46, 87, 192);
+border-radius: 17px;
+background: rgba(68, 94, 199, 0.72);
+font-family: Arial;
+font-weight: bold;
+color: #fff;
+overflow:hidden;
+-webkit-overflow-scrolling: touch;
+
+}
+.listaDeNombreBB ul {
+width: 100%!important;
+height: auto!important;
+overflow: hidden;
+border-radius: 17px;
+font-family: Arial;
+font-weight: bold;
+color: #fff;
+overflow-y: scroll;
+-webkit-overflow-scrolling: touch;
+}
+.listaDeNombreBB .ninoNombres{
+overflow: hidden;
+width: 100%!important;
+height: auto!important;
+border-radius: 17px;
+font-family: Arial;
+font-weight: bold;
+color: #fff;
+overflow-y: scroll;
+-webkit-overflow-scrolling: touch;
+}
+.listaDeNombreBB li{
+width: 30%;
+float: left;
+margin-left: 16%;
+}
+#conteDescuentos{
+width: 80%;
+overflow: hidden;
+height: 394px;
+margin-left: 10%;
+border: 9px solid rgb(46, 52, 192);
+border-radius: 17px;
+background: rgba(255, 255, 255, 0.75);
+font-family: Arial;
+font-weight: bold;
+color: #fff;
+position:relative;
+}
+.listaDescuentos{
+width: 100%!important;
+height:auto!important;
+overflow: hidden;
+margin-left: 0.1px!important;
+border-radius: 17px;
+font-family: Arial;
+font-weight: bold;
+color: #fff;
+}
+
+#contenidoNombreNinno{
+width: 81%;
+height: 360px;
+border-radius: 8px;
+margin-left: 7%;
+margin-top: 0%;
+background: rgba(32, 125, 243, 0.58);
+position: relative;
+overflow: hidden;
+color: rgb(255, 255, 255);
+border: 10px solid rgba(32, 125, 243, 0.58);
+}
+#contenidoNombresNina{
+width: 81%;
+height: 390px;
+border-radius: 8px;
+margin-left: 7%;
+margin-top: 0%;
+background: rgba(247, 139, 229, 0.97);
+position: relative;
+overflow: hidden;
+color: rgb(255, 255, 255);
+border:10px solid rgba(167, 100, 213, 0.92);
+}
+#contenidoNombreNinno ul, #contenidoNombresNina ul{
+width: 97%!important;
+height: auto!important;
+float:left;
+margin-top:11px;
+margin-left:31px;
+}
+#contenidoNombreNinno li, #contenidoNombresNina li{
+width: 97%!important;
+height: auto!important;
+float: left;
+font-size: 44px;
+}
+.listaDescuentos p{
+color: rgb(88, 69, 69);
+font-weight: bold;
+font-size: 78.4%;
+
+}
+.remov{
+float: right;
+font-size: 17px;
+margin-top: 4%;
+color: rgb(255, 255, 255);
+background: rgba(0, 0, 0, 0.62);
+padding-left: 18px;
+
+padding-right: 21px;
+padding-bottom: 3px;
+padding-top: 0px;
+}
+.sombraNombreG{
+background: rgba(19, 98, 177, 0.33);
+}
+#listaDescuentos{
+border: 8px solid rgb(255, 0, 0);
+border-radius: 7px;
+width: 93%;
+margin-left: 3.1%;
+height: 100%;
+background: rgba(255, 249, 249, 0.78);
+overflow: hidden;
+overflow-y: scroll;
+font-family: arial;
+float: left;
+margin-top: 11%;
+}
+#Descuentos .cambioColor{
+width: 97%;
+height: 143px;
+border-radius: 8px;
+margin-left: 2%;
+margin-top: 5%;
+background: rgba(32, 125, 243, 0.58);
+position: relative;
+float: left;
+}
+#Descuentos .colorNormal{
+width: 97%;
+height: 143px;
+border-radius: 8px;
+margin-left: 2%;
+margin-top: 5%;
+background: rgba(247, 139, 229, 0.97);
+position: relative;
+float: left;
+}
+.listaDescuentos .imgPromo{
+width: 30%;
+margin-left: 4%;
+margin-top: 2%;
+float: left;
+height: 85%;
+}
+.listaDescuentos .textoDesc{
+float: left;
+width: 65%;
+position: relative;
+}
+.listaDescuentos img{
+width: 100%;
+height: 100%;
+}
+.listaDescuentos h3 ,.listaDescuentos p{
+width: 90%;
+max-height: 44px;
+margin-left: 5%;
+font-size: 0.9em;
+}
+#ninno span,#ninna span{
+display: block;
+margin: 0 auto;
+width: 61%;
+font-size: 1.4em;
+}
+#eventoEmba1 #divBtncalcular .contVolver {
+width: 21%!important;
+display: block!important;
+margin: 7px auto!important;
+float: none;
+}
