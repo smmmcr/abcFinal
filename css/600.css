@@ -9,6 +9,12 @@ body {
 background: #000;
 font-size:arial;
 }
+.listaNiveles{
+position: relative;
+display: block;
+margin: 0 auto;
+width: 490px;
+}
 .listaJuegos{
 position: relative;
 display: block;
@@ -27,7 +33,7 @@ float: left;
 position: relative;
 }
 #nivel5 .listaJuegos li{
-width: 120px;
+width: 92px;
 float: left;
 position: relative;
 }
@@ -51,11 +57,18 @@ left: 0px;
 top: 0px;
 }
 #nivel5 .listaJuegos div {
-width: 122px;
+width: 92px;
 z-index: 999;
 position: absolute;
 left: 0px;
 top: 0px;
+}
+#nivel5 .listaJuegos {
+position: relative;
+display: block;
+margin: 33px auto;
+height: 217px;
+width: 465px;
 }
 .mask{
 position: absolute;

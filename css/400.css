@@ -21,6 +21,12 @@ z-index: 999;
 color: #fff;
 font-size: 2em;
 }
+.listaNiveles{
+position: relative;
+display: block;
+width: 332px;
+margin: 22px auto;
+}
 .listaJuegos{
 position: relative;
 display: block;
@@ -37,7 +43,7 @@ width: 75px;
 float: left;
 position: relative;
 }
-#nivel2 .listaJuegos li , #nivel3 .listaJuegos li,#nivel4 .listaJuegos li {
+#nivel3 .listaJuegos li,#nivel4 .listaJuegos li {
 width: 60px;
 float: left;
 position: relative;
@@ -92,7 +98,7 @@ position: absolute;
 left: 0px;
 top: 0px;
 }
-#nivel2 .listaJuegos div, #nivel3 .listaJuegos div, #nivel4 .listaJuegos div{
+#nivel3 .listaJuegos div, #nivel4 .listaJuegos div{
 width: 60px;
 z-index: 999;
 position: absolute;
