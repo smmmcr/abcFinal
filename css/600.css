@@ -23,12 +23,12 @@ height: 480px;
 width: 602px;
 }
 #nivel1 .listaJuegos li {
-width: 190px;
+width: 160px;
 float: left;
 position: relative;
 }
 #nivel2 .listaJuegos li , #nivel3 .listaJuegos li,#nivel4 .listaJuegos li {
-width: 146px;
+width: 115px;
 float: left;
 position: relative;
 }
@@ -43,14 +43,14 @@ z-index: 1;
 }
 
 #nivel1 .listaJuegos div {
-width: 190px;
+width: 160px;
 z-index: 999;
 position: absolute;
 left: 0px;
 top: 0px;
 }
 #nivel2 .listaJuegos div, #nivel3 .listaJuegos div, #nivel4 .listaJuegos div{
-width: 146px;
+width: 115px;
 z-index: 999;
 position: absolute;
 left: 0px;
@@ -62,6 +62,20 @@ z-index: 999;
 position: absolute;
 left: 0px;
 top: 0px;
+}
+#nivel2 .listaJuegos {
+position: relative;
+display: block;
+margin: 38px auto;
+height: 194px;
+width: 475px;
+}
+#nivel3 .listaJuegos, #nivel4 .listaJuegos {
+position: relative;
+display: block;
+margin: 33px auto;
+height: 217px;
+width: 480px;
 }
 #nivel5 .listaJuegos {
 position: relative;
@@ -81,6 +95,13 @@ font-size: 2em;
 }
 #objninno{
 display:none;
+}
+#nivel1 .listaJuegos {
+position: relative;
+display: block;
+margin: 33px auto;
+height: 180px;
+width: 515px;
 }
 #tabinfo {
 display: block;

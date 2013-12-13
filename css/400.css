@@ -414,10 +414,22 @@ float: left;
 margin-top: 12px;
 width: 10%;
 }
-.contVolver{
+#nivel1 .contVolver,#nivel2 .contVolver,#nivel3 .contVolver,#nivel4 .contVolver,#nivel5 .contVolver{
 width: 10%;
 position: absolute;
 }
+#pagInfoSemanal .contVolver,#Descuentos .contVolver,#TemasEmbarazo .contVolver {
+width: 132px;
+position: absolute;
+right: 105px;
+}
+#TemasEmbarazo .contVolver,#juegos .contVolver,#eventoEmba2 .contVolver,#eventoEmba3 .contVolver,#natacion .contVolver,#yoga .contVolver,
+#pilates .contVolver,#kegel .contVolver,#bicicleta .contVolver,#pelota .contVolver,#aerobicos .contVolver,#bailar .contVolver,#caminar .contVolver{
+width: 97px;
+position: absolute;
+left: 42px;
+}
+
 .contVolver img{
 width: 100%;
 }
