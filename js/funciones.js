@@ -339,7 +339,7 @@ function descuentos(){
 var a=0,b=0,c=0,verdadero=0;
 function encontrarParejas(i,j){
 	c++;
-	$('#nivel'+j+' #'+i).hide("explode",{},300);
+	$('#nivel'+j+' #'+i).hide("explode",{},"slow");
 	acierto=false;
 	if(c==1){
 		a=i;
@@ -354,8 +354,8 @@ function encontrarParejas(i,j){
 			verdadero++;
 		}else{
 			setTimeout(function(){
-				$('#nivel'+j+' #'+a).show("explode",{},300);
-				$('#nivel'+j+' #'+i).show("explode",{},300);
+				$('#nivel'+j+' #'+a).show("explode",{},"slow");
+				$('#nivel'+j+' #'+i).show("explode",{},"slow");
 			},500);
 		}
 
@@ -418,9 +418,9 @@ var datos = new Array();
 					}					
 				break;
 				case 5:
-					if(i==1||i==4||i==3||i==5||i==6||i==7||i==9||i==8){
+					if(i==1||i==20||i==3||i==5||i==6||i==7||i==9||i==8){
 						protecto="verde";					
-					}else if(i==17||i==18||i==19||i==20){
+					}else if(i==17||i==16||i==19||i==4){
 						protecto="rojo";
 					}else{
 						protecto="azul";
