@@ -8,6 +8,10 @@ body {
 background: #000;
 font-size:arial;
 }
+.menuPrincipal{
+
+
+}
 .mask{
 position: absolute;
 width: 100%;
@@ -16,6 +20,30 @@ background: rgba(0, 0, 0, 0.41);
 z-index: 999;
 color: #fff;
 font-size: 2em;
+}
+.listaJuegos{
+position: relative;
+display: block;
+margin: 0 auto;
+height: 348px;
+}
+.listaJuegos li {
+width: 80px;
+float: left;
+position: relative;
+
+}
+.listaJuegos img{
+z-index: 1;
+
+}
+
+.listaJuegos div {
+width: 79px;
+z-index: 999;
+position: absolute;
+left: 0px;
+top: 0px;
 }
 #objninno{
 display:none;
@@ -64,14 +92,13 @@ position: absolute!important;
 #Descuentos,#juegos,
 #eventoEmba2,#eventoEmba3,
 #listaDeNombreBB1,#listaDeNombreBB2,
-#infosolicitada,#caminar,#natacion,#yoga,#pilates,#kegel,#bicicleta,#pelota,#aerobicos,#bailar{
+#infosolicitada,#caminar,#natacion,#yoga,#pilates,#kegel,#bicicleta,#pelota,#aerobicos,#bailar,#nivel1,#nivel2,#nivel3,#nivel4,#nivel5{
 width: 100%;
 height: 100%;
 /*position: relative;*/
 position: fixed;
 background: url(../img/backgr.jpg) no-repeat;
 min-height: 288px;
-
 background-size: 100% 100%;
 }
 label.ui-select{
@@ -81,10 +108,17 @@ label.ui-select{
  background: url(../img/backgr.jpg) no-repeat;
  background-size: 100% 100%;
  }
-.menuPrincipal li,.menuPrincipal img,.footer img,.header img{
+.footer img,.header img{
 width: 100%;
 }
-
+.menuPrincipal li,.menuPrincipal img{
+width: 88%;
+}
+.listaNiveles{
+width: 565px;
+margin: 0 auto;
+display: block;
+}
 .footer{
 width: 100%!important;
 height: 56PX!important;
@@ -314,9 +348,8 @@ margin-top: 12px;
 width: 10%;
 }
 .contVolver{
-float: left;
-margin-top: 4px;
-width: 19%;
+width: 10%;
+position: absolute;
 }
 .contVolver img{
 width: 100%;
@@ -731,4 +764,9 @@ width: 21%!important;
 display: block!important;
 margin: 7px auto!important;
 float: none;
+}
+.volverJuego{
+width: 200px;
+display: block;
+margin: 0 auto;
 }

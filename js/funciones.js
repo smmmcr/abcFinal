@@ -52,7 +52,7 @@ function checkConnection(){
 			if(states[networkState]!=0){
 			sincronizar();
 			}else{
-			alert("Para utilizar esta aplicación necesita conexión a internet");
+			alert("Para utilizar esta aplicaciÃ³n necesita conexiÃ³n a internet");
 			 navigator.app.exitApp();
 			}
    }
@@ -336,6 +336,103 @@ function descuentos(){
 		});
 	
 }
+var a=0,b=0,c=0,verdadero=0;
+function encontrarParejas(i,j){
+	c++;
+	$('#nivel'+j+' #'+i).hide("explode",{},300);
+	acierto=false;
+	if(c==1){
+		a=i;
+		if(i%2!=0||i==1){
+			b=i+1;						
+		}else{
+			b=i-1;
+		}		
+	}else{
+		if(i==b){
+			acierto=true;
+			verdadero++;
+		}else{
+			setTimeout(function(){
+				$('#nivel'+j+' #'+a).show("explode",{},300);
+				$('#nivel'+j+' #'+i).show("explode",{},300);
+			},500);
+		}
+
+		c=0;
+	}
+console.log("a="+a);
+		console.log("b="+b);
+		console.log("c="+c);
+
+}
+function agregarDados(n,c){
+var datos = new Array();
+	var a=0;
+	$("#nivel"+n+" .listaJuegos").html("");
+	do{
+		i=Math.floor((Math.random()*c)+1);
+		agrega=false;
+		console.log(agrega);
+		for(j=0;j<datos.length;j++){
+			if(datos[j]==i){
+				agrega=true;				
+			}
+		}
+		if(!agrega){
+			protecto="azul";
+			switch(n){
+				case 1:
+					if(i%2!=0||i==1){
+						protecto="azul";					
+					}else{
+						protecto="rojo";
+					}
+					
+				break;
+				case 2:
+					if(i==1||i==3||i==5){
+						protecto="azul";					
+					}else if(i==2||i==4||i==8){
+						protecto="verde";
+					}else{
+						protecto="rojo";
+					}					
+				break;
+				case 3:
+					if(i==4||i==8||i==5||i==10){
+						protecto="azul";					
+					}else if(i==1||i==6||i==7||i==11){
+						protecto="verde";
+					}else{
+						protecto="rojo";
+					}					
+				break;
+				case 4:
+					if(i==1||i==8||i==3||i==9){
+						protecto="rojo";					
+					}else if(i==2||i==4||i==5||i==16){
+						protecto="verde";
+					}else{
+						protecto="azul";
+					}					
+				break;
+				case 5:
+					if(i==1||i==4||i==3||i==5||i==6||i==7||i==9||i==8){
+						protecto="verde";					
+					}else if(i==17||i==18||i==19||i==20){
+						protecto="rojo";
+					}else{
+						protecto="azul";
+					}					
+				break;
+			}
+			$("#nivel"+n+" .listaJuegos").append('<li><a href="javascript:encontrarParejas('+i+','+n+')"><div id="'+i+'"><img src="img/memoria/'+protecto+'.png" /></div><img src="img/memoria/nivel'+n+'/'+i+'.png" /></a></li>');
+			datos[a++] =i;
+		}
+	}while(a<c);
+
+}
 function juegos(){
 uri="https://movilmultimediasa.com/abcMobil/post.php?des=1";
 			$.getJSON(uri + '?function=' + 'check' + '&callback=?', function (json_data) {
@@ -358,6 +455,7 @@ uri="https://movilmultimediasa.com/abcMobil/post.php?des=1";
 			});
 $(".listaJuegos").show();
 }
+
 function comentar(){
 var comentarios1=$("#comentario").val();
 	$.ajax({
@@ -391,5 +489,9 @@ $("#juegos").hide();
 $("#ninno, #ninna").hide();
 $(".listaJuegos").hide();
 $("#pagInicio").show();
+}
+function cargarImg(){
+	
+	
 }
 //**/

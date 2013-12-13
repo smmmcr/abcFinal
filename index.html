@@ -17,10 +17,11 @@
 	<link rel="stylesheet" media="screen and (min-width: 400px)"href="css/400.css">
 	<link rel="stylesheet" media="screen and (min-width: 600px)"href="css/600.css">
 	<link rel="stylesheet" media="screen and (min-width: 760px)"href="css/760.css">
-	<script type="text/javascript" src="phonegap.js"></script>
+	<!--<script type="text/javascript" src="phonegap.js"></script>-->
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/funciones.js"></script>
 	<script type="text/javascript" src="js/iscroll.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
 	<script src="js/jquery.mobile-1.3.2.min.js"></script>
 	
 	<!--<script type="text/javascript" charset="utf-8" src="js/phonegap-1.0.0.js"></script> -->
@@ -28,7 +29,7 @@
 <body> 
 	<!-- The runtime script.  You can rename it, but don't forget to rename the reference here as well.
     This file will have been minified and obfuscated if you enabled "Minify script" during export. -->
-			<div id="pagInicio" data-role="page">
+		<div id="pagInicio" data-role="page">
 			<div class="header" data-role="header">
 				<img src="img/hederPrincipal.png" />
 			</div>
@@ -38,13 +39,14 @@
 				<li><a href="#TemasSemanales"><img src="img/btnTemasSemanales.png" /></a></li>	
 				<li><a href="#TemasEmbarazo"><img src="img/btnTemasDeEmbarazo.png" /></a></li>	
 				<li><a href="#Descuentos"><img src="img/btnDescuentosABC.png" /></a></li>	
+				<li><a href="#juegos"><img src="img/btnJuegos.png" /></a></li>	
 				<!--<li><a href="#!" onclick="nuevoContenido(5);"><img src="img/btnJuegos.png" /></a></li>	-->
 			</ul>
 			</div>
 			<div class="footer" data-role="footer">
 				<a href="javascript:window.open('https://www.facebook.com/juguetoncr?fref=ts', '_blank', 'location=yes'); "  ><img src="img/logoJugueton.png" /></a>
-		<a href="javascript:window.open('https://www.facebook.com/bebemundocr?ref=ts&fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoBebe.png" /></a>
-			<a href="javascript:window.open('https://www.facebook.com/elabcdelospadres?fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoabc.png" /></a>
+				<a href="javascript:window.open('https://www.facebook.com/bebemundocr?ref=ts&fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoBebe.png" /></a>
+				<a href="javascript:window.open('https://www.facebook.com/elabcdelospadres?fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoabc.png" /></a>
 			</div>			
 		</div>			
 			<div id="pagInfoSemanal" data-role="page">
@@ -61,7 +63,7 @@
 					</li>
 					</div >
 					<div id="objFormulario">					
-						<div id="divtopforminfosemanal">							
+						<div id="divtopforminfosemanal">					
 							<div id="divCiclo">
 								<div id="selectsemanas">
 									<select name="cicloEm" id="cicloEm"><option value=""></option><option value="1">1</option><option value="2">2</option>
@@ -145,15 +147,15 @@
 								<!--<input type="button" name="enviar" id="enviar" onclick="volver()"  />	-->
 								<input type="image" src="img/btnEnviar.png" onclick="infonino();" name="enviar" id="enviar" />	
 								<input type="image"  src="img/btnfacebook.png" name="facebook" onclick="goToNext()" id="facebook" />	
-								<div class="contVolver"><a href="" onclick="javascript:top.location='index.html';"><img  src="img/btnVolver.png" class="volver" /></a></div>	
+								<div class="contVolver"><a href="#" data-rel="back"><img  src="img/btnVolver.png" class="volver" /></a></div>	
 								<!--<input type="button" name="volver" onclick="volver()" class="volver" />	-->
 							</div>
 					</div>
 				</div>
 				<div class="footer" data-role="footer">
-				<a href="javascript:window.open('https://www.facebook.com/juguetoncr?fref=ts', '_blank', 'location=yes'); "  ><img src="img/logoJugueton.png" /></a>
-		<a href="javascript:window.open('https://www.facebook.com/bebemundocr?ref=ts&fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoBebe.png" /></a>
-			<a href="javascript:window.open('https://www.facebook.com/elabcdelospadres?fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoabc.png" /></a>
+					<a href="javascript:window.open('https://www.facebook.com/juguetoncr?fref=ts', '_blank', 'location=yes'); "  ><img src="img/logoJugueton.png" /></a>
+					<a href="javascript:window.open('https://www.facebook.com/bebemundocr?ref=ts&fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoBebe.png" /></a>
+					<a href="javascript:window.open('https://www.facebook.com/elabcdelospadres?fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoabc.png" /></a>
 			</div>			
 			</div>
 			<div id="TemasSemanales"  data-role="page" >
@@ -189,7 +191,7 @@
 					<div id="botonesTEmas">
 						<div id="comentar"><a href="" class='link' rel="javascript:window.open('https://www.facebook.com/elabcdelospadres/app_458041020931487', '_blank', 'location=yes'); " target="_blank" data-rel="popup"><img src="img/btncomentarl.png" /></a></div>
 						<div id="incluir"><a href="" class='link' rel="javascript:window.open('https://www.facebook.com/elabcdelospadres/app_458041020931487', '_blank', 'location=yes'); " target="_blank" data-rel="popup"><img src="img/btnincluir.png" /></a></div>
-						<div class="contVolver"><a href="" onclick="javascript:top.location='index.html';"><img  src="img/btnVolver.png" class="volver" /></a></div>			
+						<div class="contVolver"><a href="#" data-rel="back"><img  src="img/btnVolver.png" class="volver" /></a></div>		
 					</div>
 				</div>
 					<div class="footer" data-role="footer">
@@ -209,7 +211,7 @@
 						<li><a href="#eventoEmba3" ><img src="img/btnSeleccNombre.png"/></a> </li>
 					</ul>			
 					<div id="botonesTemasEmba">
-						<div class="contVolver"><a href="" onclick="javascript:top.location='index.html';"><img  src="img/btnVolver.png" class="volver" /></a></div>					
+						<div class="contVolver"><a href="#" data-rel="back"><img  src="img/btnVolver.png" class="volver" /></a></div>					
 					</div>
 				</div>
 				<div class="footer" data-role="footer">
@@ -229,7 +231,7 @@
 					</div>
 				</div>
 				<div id="botonesDescuentos">
-					<div class="contVolver"><a href="" onclick="javascript:top.location='index.html';"><img  src="img/btnVolver.png" class="volver" /></a></div>					
+					<div class="contVolver"><a href="#" data-rel="back"><img  src="img/btnVolver.png" class="volver" /></a></div>					
 				</div>
 				<div class="footer" data-role="footer">
 				<a href="javascript:window.open('https://www.facebo
@@ -240,13 +242,17 @@
 			</div>
 			<div id="juegos" data-role="page">
 				<div class="header" data-role="header">
-					<img src="img/headerJuegos.png" />
+					<img src="img/headermemoria.png" />
 				</div>
 				<div id="contenidoGeneralTemaEmbarazo" data-role="content">
-					<ul class="listaJuegos">
-					
-					</ul>
-					<input type="button" name="volver" onclick="volver()" class="volver"/>					
+					<div class="contVolver"><a href="#" data-rel="back"><img  src="img/btnVolver.png" class="volver" /></a></div>
+					<ul class="listaNiveles">
+						<li><a href="#nivel1"><div id="1"></div><img src="img/nivel1.png" /></a></li>
+						<li><a href="#nivel2"><div id="2"></div><img src="img/nivel2.png" /></a></li>
+						<li><a href="#nivel3"><div id="3"></div><img src="img/nivel3.png" /></a></li>
+						<li><a href="#nivel4"><div id="4"></div><img src="img/nivel4.png" /></a></li>
+						<li><a href="#nivel5"><div id="5"></div><img src="img/nivel5.png" /></a></li>				
+					</ul>				
 				</div>
 				<div class="footer" data-role="footer">
 				<a href="javascript:window.open('https://www.facebook.com/juguetoncr?fref=ts', '_blank', 'location=yes'); "  ><img src="img/logoJugueton.png" /></a>
@@ -294,12 +300,11 @@
 						<div id='imagenNacido'><img src="img/ciguena.png">
 						<p id="resultadoPar"></p>
 						</div>
-					</div>
-						
+					</div>						
 				</div>
 				<div id="divBtncalcular">
 						<input type="image" name="calcular" src="img/calcular.png" id="calcular" onclick="calcular()"/>
-				<div class="contVolver"><a href="#TemasEmbarazo"><img  src="img/btnVolver.png" class="volver" /></a></div>	
+				<div class="contVolver"><a href="#" data-rel="back"><img  src="img/btnVolver.png" class="volver" /></a></div>	
 						</div>
 				<div class="footer" data-role="footer">
 				<a href="javascript:window.open('https://www.facebook.com/juguetoncr?fref=ts', '_blank', 'location=yes'); "  ><img src="img/logoJugueton.png" /></a>
@@ -330,7 +335,7 @@
 					</div>
 				
 				</div>
-				<div class="contVolver"><a href="#TemasEmbarazo"><img  src="img/btnVolver.png" class="volver" /></a></div>	
+				<div class="contVolver"><a href="#" data-rel="back"><img  src="img/btnVolver.png" class="volver" /></a></div>	
 				<div class="footer" data-role="footer">
 				<a href="javascript:window.open('https://www.facebook.com/juguetoncr?fref=ts', '_blank', 'location=yes'); "  ><img src="img/logoJugueton.png" /></a>
 				<a href="javascript:window.open('https://www.facebook.com/bebemundocr?ref=ts&fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoBebe.png" /></a>
@@ -351,7 +356,7 @@
 						<span> Nombres de Niña </span></a>
 					</div>
 				</div>
-				<div class="contVolver"><a href="#TemasEmbarazo"><img  src="img/btnVolver.png" class="volver" /></a></div>
+				<div class="contVolver"><a href="#" data-rel="back"><img  src="img/btnVolver.png" class="volver" /></a></div>
 				<div class="footer" data-role="footer">
 				<a href="javascript:window.open('https://www.facebook.com/juguetoncr?fref=ts', '_blank', 'location=yes'); "  ><img src="img/logoJugueton.png" /></a>
 				<a href="javascript:window.open('https://www.facebook.com/bebemundocr?ref=ts&fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoBebe.png" /></a>
@@ -382,11 +387,11 @@
 						</ul>
 					</div>
 					<div class="contVolver"><a href="#eventoEmba3"><img  src="img/btnVolver.png" class="volver" /></a></div>
-				<div class="footer" data-role="footer">
-				<a href="javascript:window.open('https://www.facebook.com/juguetoncr?fref=ts', '_blank', 'location=yes'); "  ><img src="img/logoJugueton.png" /></a>
-				<a href="javascript:window.open('https://www.facebook.com/bebemundocr?ref=ts&fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoBebe.png" /></a>
-				<a href="javascript:window.open('https://www.facebook.com/elabcdelospadres?fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoabc.png" /></a>
-				</div>	
+					<div class="footer" data-role="footer">
+					<a href="javascript:window.open('https://www.facebook.com/juguetoncr?fref=ts', '_blank', 'location=yes'); "  ><img src="img/logoJugueton.png" /></a>
+					<a href="javascript:window.open('https://www.facebook.com/bebemundocr?ref=ts&fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoBebe.png" /></a>
+					<a href="javascript:window.open('https://www.facebook.com/elabcdelospadres?fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoabc.png" /></a>
+					</div>	
 			</div>
 			<div id="infosolicitada" data-role="page" >
 					<div class="header" data-role="header">
@@ -398,12 +403,12 @@
 						</ul>
 					</div>
 					<div class="volverformulario"><a href="" onclick="volverF();"><img  src="img/formulario.png" class="volver" /></a></div>	
-					<div class="contVolver"><a href="" onclick="javascript:top.location='index.html';"><img  src="img/btnVolver.png" class="volver" /></a></div>	
-				<div class="footer" data-role="footer">
-				<a href="javascript:window.open('https://www.facebook.com/juguetoncr?fref=ts', '_blank', 'location=yes'); "  ><img src="img/logoJugueton.png" /></a>
-				<a href="javascript:window.open('https://www.facebook.com/bebemundocr?ref=ts&fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoBebe.png" /></a>
-				<a href="javascript:window.open('https://www.facebook.com/elabcdelospadres?fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoabc.png" /></a>
-				</div>	
+					<div class="contVolver"><a href="#" data-rel="back"><img  src="img/btnVolver.png" class="volver" /></a></div>	
+					<div class="footer" data-role="footer">
+					<a href="javascript:window.open('https://www.facebook.com/juguetoncr?fref=ts', '_blank', 'location=yes'); "  ><img src="img/logoJugueton.png" /></a>
+					<a href="javascript:window.open('https://www.facebook.com/bebemundocr?ref=ts&fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoBebe.png" /></a>
+					<a href="javascript:window.open('https://www.facebook.com/elabcdelospadres?fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoabc.png" /></a>
+					</div>	
 			</div>
 			<div id="caminar" data-role="page">
 				<div class="header" data-role="header">
@@ -617,7 +622,129 @@
 				<a href="javascript:window.open('https://www.facebook.com/elabcdelospadres?fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoabc.png" /></a>
 				</div>	
 			</div>
+			<div id="nivel1" data-role="page">
+				<div class="header" data-role="header">
+					<img src="img/memoria/nivel1/headernivel1.png" />
+				</div>
+				<div id="contenidoGeneralTemaEmbarazo" data-role="content">
+				<div class="contVolver"><a href="#" data-rel="back"><img  src="img/btnVolver.png" class="volver" /></a></div>
+				</div>
+					<ul class="listaJuegos">
+						
+					</ul>
+				<a href="javascript:agregarDados(1,6);" class="volverJuego">
+					<img src="img/volverAJugaar.png" /> 
+				</a>
+				<div class="footer" data-role="footer">
+				<a href="javascript:window.open('https://www.facebook.com/juguetoncr?fref=ts', '_blank', 'location=yes'); "  ><img src="img/logoJugueton.png" /></a>
+				<a href="javascript:window.open('https://www.facebook.com/bebemundocr?ref=ts&fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoBebe.png" /></a>
+				<a href="javascript:window.open('https://www.facebook.com/elabcdelospadres?fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoabc.png" /></a>
+				</div>	
+			</div>
+			<div id="nivel2" data-role="page">
+				<div class="header" data-role="header">
+					<img src="img/memoria/nivel2/headernivel2.png" />
+				</div>
+				<div id="contenidoGeneralTemaEmbarazo" data-role="content">
+					<div class="contVolver"><a href="#" data-rel="back"><img  src="img/btnVolver.png" class="volver" /></a></div>
+					<ul class="listaJuegos">
+						
+					</ul>
+					<a href="javascript:agregarDados(2,8);" class="volverJuego">
+						<img src="img/volverAJugaar.png" /> 
+					</a>
+				</div>
+				<div class="footer" data-role="footer">
+				<a href="javascript:window.open('https://www.facebook.com/juguetoncr?fref=ts', '_blank', 'location=yes'); "  ><img src="img/logoJugueton.png" /></a>
+				<a href="javascript:window.open('https://www.facebook.com/bebemundocr?ref=ts&fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoBebe.png" /></a>
+				<a href="javascript:window.open('https://www.facebook.com/elabcdelospadres?fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoabc.png" /></a>
+				</div>	
+			</div>
+			<div id="nivel3" data-role="page">
+				<div class="header" data-role="header">
+					<img src="img/memoria/nivel3/headernivel3.png" />
+				</div>
+				<div id="contenidoGeneralTemaEmbarazo" data-role="content">
+					<div class="contVolver"><a href="#" data-rel="back"><img  src="img/btnVolver.png" class="volver" /></a></div>
+					<ul class="listaJuegos">
+						
+					</ul>
+					<a href="javascript:agregarDados(3,12);" class="volverJuego">
+						<img src="img/volverAJugaar.png" /> 
+					</a>					
+				</div>
+				<div class="footer" data-role="footer">
+				<a href="javascript:window.open('https://www.facebook.com/juguetoncr?fref=ts', '_blank', 'location=yes'); "  ><img src="img/logoJugueton.png" /></a>
+				<a href="javascript:window.open('https://www.facebook.com/bebemundocr?ref=ts&fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoBebe.png" /></a>
+				<a href="javascript:window.open('https://www.facebook.com/elabcdelospadres?fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoabc.png" /></a>
+				</div>	
+			</div>
+			<div id="nivel4" data-role="page">
+				<div class="header" data-role="header">
+					<img src="img/memoria/nivel4/headernivel4.png" />
+				</div>
+				<div id="contenidoGeneralTemaEmbarazo" data-role="content">
+					<ul class="listaJuegos">
+						
+					</ul>
+					<a href="javascript:agregarDados(4,16);" class="volverJuego">
+						<img src="img/volverAJugaar.png" /> 
+					</a>
+					<div class="contVolver"><a href="#" data-rel="back"><img  src="img/btnVolver.png" class="volver" /></a></div>
+				</div>
+				<div class="footer" data-role="footer">
+				<a href="javascript:window.open('https://www.facebook.com/juguetoncr?fref=ts', '_blank', 'location=yes'); "  ><img src="img/logoJugueton.png" /></a>
+				<a href="javascript:window.open('https://www.facebook.com/bebemundocr?ref=ts&fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoBebe.png" /></a>
+				<a href="javascript:window.open('https://www.facebook.com/elabcdelospadres?fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoabc.png" /></a>
+				</div>	
+			</div>
+			<div id="nivel5" data-role="page">
+				<div class="header" data-role="header">
+					<img src="img/memoria/nivel5/headernivel5.png" />
+					<div class="contVolver"><a href="#" data-rel="back"><img  src="img/btnVolver.png" class="volver" /></a></div>
+				</div>
+				<div id="contenidoGeneralTemaEmbarazo" data-role="content">
+					
+					<ul class="listaJuegos">
+				
+					</ul>
+
+					<a href="javascript:agregarDados(5,20);" class="volverJuego">
+						<img src="img/volverAJugaar.png" /> 
+					</a>
+					
+					
+				</div>
+
+				<div class="footer" data-role="footer">
+				<a href="javascript:window.open('https://www.facebook.com/juguetoncr?fref=ts', '_blank', 'location=yes'); "  ><img src="img/logoJugueton.png" /></a>
+				<a href="javascript:window.open('https://www.facebook.com/bebemundocr?ref=ts&fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoBebe.png" /></a>
+				<a href="javascript:window.open('https://www.facebook.com/elabcdelospadres?fref=ts', '_blank', 'location=yes'); "  >	<img src="img/logoabc.png" /></a>
+
+				</div>	
+			</div>
+
 <script>					
+$("#nivel1").on('pagecreate', function(){
+	agregarDados(1,6);
+
+});
+$("#nivel2").on('pagecreate', function(){
+	agregarDados(2,8);
+
+});
+$("#nivel3").on('pagecreate', function(){
+	agregarDados(3,12);
+
+});
+$("#nivel4").on('pagecreate', function(){
+	agregarDados(4,16);
+
+});
+$("#nivel5").on('pagecreate', function(){
+	agregarDados(5,20);
+});
+
 $("#infosolicitada").on('pagecreate', function(){
  $.fn.disableSelection = function() {
         return this

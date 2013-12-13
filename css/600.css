@@ -9,6 +9,29 @@ body {
 background: #000;
 font-size:arial;
 }
+.listaJuegos{
+position: relative;
+display: block;
+margin: 0 auto;
+height: 522px;
+width: 500px;
+}
+.listaJuegos li {
+width: 115px;
+float: left;
+position: relative;
+}
+.listaJuegos img{
+z-index: 1;
+}
+
+.listaJuegos div {
+width: 115px;
+z-index: 999;
+position: absolute;
+left: 0px;
+top: 0px;
+}
 .mask{
 position: absolute;
 width: 100%;
@@ -50,7 +73,7 @@ border-radius: 7px;
 #Descuentos,#juegos,
 #eventoEmba2,#eventoEmba3,
 #listaDeNombreBB1,#listaDeNombreBB2,
-#infosolicitada,#caminar,#natacion,#yoga,#pilates,#kegel,#bicicleta,#pelota,#aerobicos,#bailar{
+#infosolicitada,#caminar,#natacion,#yoga,#pilates,#kegel,#bicicleta,#pelota,#aerobicos,#bailar,#nivel1,#nivel2,#nivel3,#nivel4,#nivel5{
 width: 100%;
 height: 100%;
 /*position: relative;*/
@@ -343,10 +366,6 @@ margin-left: 11%;
 border: none;
 box-shadow: 0 0 0 0;
 }
-.contVolver{
-float: left;
-margin-top: 10px;
-}
 .volverformulario{
 float: left;
 margin-left: 15%;
@@ -376,7 +395,7 @@ color: #FFF;
 border-radius: 12px;
 text-shadow: 0 0 0;
 }
-#contenidoTemaSemana{
+#contenidoTemaSemana
 border: 10px solid #FC7B33;
 border-radius: 12px;
 margin-top: 12px;
@@ -386,7 +405,6 @@ position: relative;
 color: rgba(12, 11, 11, 0.9)!important;
 }
 #contenidoTemaSemana p, #contenidoTemaSemana li{
-
 color: rgba(12, 11, 11, 0.9)!important;
 }
 #contenidoTemaSemana ul{
@@ -743,4 +761,9 @@ width: 21%!important;
 display: block!important;
 margin: 7px auto!important;
 float: none;
+}
+.volverJuego{
+width: 400px;
+display: block;
+margin: 0 auto;
 }

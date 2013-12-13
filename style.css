@@ -730,3 +730,7 @@ color: rgb(255, 255, 255);
 background: rgba(0, 109, 248, 0.62);
 /*border: 1px solid rgb(218, 33, 99);*/
 }
+.listaJuegos li img{
+width: 150px;
+
+}
