@@ -27,27 +27,52 @@ width: 250px;
 position: relative;
 display: block;
 margin: 0 auto;
-width: 246px;
-height: 250px;
+width: 255px;
+height: 210px;
 }
-.listaJuegos li {
+#nivel1 .listaJuegos li {
 width: 80px;
 float: left;
 position: relative;
-
+}
+#nivel2 .listaJuegos li , #nivel3 .listaJuegos li,#nivel4 .listaJuegos li {
+width: 60px;
+float: left;
+position: relative;
+}
+#nivel5 .listaJuegos li{
+width: 50px;
+float: left;
+position: relative;
 }
 .listaJuegos img{
 z-index: 1;
 
 }
 
-.listaJuegos div {
-width: 79px;
+#nivel1 .listaJuegos div {
+width: 80px;
 z-index: 999;
 position: absolute;
 left: 0px;
 top: 0px;
 }
+#nivel2 .listaJuegos div, #nivel3 .listaJuegos div, #nivel4 .listaJuegos div{
+width: 60px;
+z-index: 999;
+position: absolute;
+left: 0px;
+top: 0px;
+}
+#nivel5 .listaJuegos div {
+width: 50px;
+z-index: 999;
+position: absolute;
+left: 0px;
+top: 0px;
+}
+
+
 /*.listaJuegos div {
 background: #000;
 width: 55px;
@@ -130,10 +155,10 @@ width: 94%;
 
 .footer{
 width: 100%!important;
-height: 56PX!important;
+height: 52PX!important;
 margin-bottom: 0px!important;
 position: absolute!important;
-top: 85%!important;
+top: 87%!important;
 bottom: 0px!important;
 }
 img{
@@ -356,8 +381,7 @@ margin-top: 12px;
 width: 10%;
 }
 .contVolver{
-float: left;
-margin-top: 4px;
+
 width: 19%;
 }
 .contVolver img{
@@ -798,7 +822,7 @@ margin: 7px auto!important;
 float: none;
 }
 .volverJuego{
-width: 100px;
+width: 210px;
 display: block;
 margin: 0 auto;
 }

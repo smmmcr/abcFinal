@@ -13,20 +13,45 @@ font-size:arial;
 position: relative;
 display: block;
 margin: 0 auto;
-height: 522px;
-width: 500px;
+height: 480px;
+width: 602px;
 }
-.listaJuegos li {
-width: 115px;
+#nivel1 .listaJuegos li {
+width: 190px;
+float: left;
+position: relative;
+}
+#nivel2 .listaJuegos li , #nivel3 .listaJuegos li,#nivel4 .listaJuegos li {
+width: 146px;
+float: left;
+position: relative;
+}
+#nivel5 .listaJuegos li{
+width: 120px;
 float: left;
 position: relative;
 }
 .listaJuegos img{
 z-index: 1;
+
 }
 
-.listaJuegos div {
-width: 115px;
+#nivel1 .listaJuegos div {
+width: 190px;
+z-index: 999;
+position: absolute;
+left: 0px;
+top: 0px;
+}
+#nivel2 .listaJuegos div, #nivel3 .listaJuegos div, #nivel4 .listaJuegos div{
+width: 146px;
+z-index: 999;
+position: absolute;
+left: 0px;
+top: 0px;
+}
+#nivel5 .listaJuegos div {
+width: 122px;
 z-index: 999;
 position: absolute;
 left: 0px;
