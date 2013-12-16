@@ -336,7 +336,7 @@ function descuentos(){
 		});
 	
 }
-var a=0,b=0,c=0,verdadero=0;
+
 function encontrarParejas(i,j){
 	c++;
 	$('#nivel'+j+' #'+i).hide("explode",{},"slow");
