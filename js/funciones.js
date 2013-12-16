@@ -339,7 +339,8 @@ function descuentos(){
 var a=0,b=0,c=0,verdadero=0;
 function encontrarParejas(i,j){
 	c++;
-	$('#nivel'+j+' #'+i).hide("explode",{},"slow");
+	//$('#nivel'+j+' #'+i).hide("explode",{},"slow");
+	$('#nivel'+j+' #'+i).hide(900);
 	acierto=false;
 	if(c==1){
 		a=i;
@@ -354,9 +355,11 @@ function encontrarParejas(i,j){
 			verdadero++;
 		}else{
 			setTimeout(function(){
-				$('#nivel'+j+' #'+a).show("explode",{},"slow");
-				$('#nivel'+j+' #'+i).show("explode",{},"slow");
-			},500);
+				/*$('#nivel'+j+' #'+a).show("explode",{},"slow");
+				$('#nivel'+j+' #'+i).show("explode",{},"slow");*/
+				$('#nivel'+j+' #'+a).show(900);
+				$('#nivel'+j+' #'+i).show(900);
+			},300);
 		}
 
 		c=0;
