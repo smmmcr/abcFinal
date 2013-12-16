@@ -367,6 +367,7 @@ console.log("a="+a);
 
 }
 function agregarDados(n,c){
+	c=0;
 var datos = new Array();
 	var a=0;
 	$("#nivel"+n+" .listaJuegos").html("");

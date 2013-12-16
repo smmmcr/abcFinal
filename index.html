@@ -727,24 +727,27 @@
 			</div>
 
 <script>					
-$("#nivel1").on('pagecreate', function(){
+$("#nivel1").on('pagebeforeshow', function(){
 	agregarDados(1,6);
 
 });
-$("#nivel2").on('pagecreate', function(){
+$("#nivel2").on('pagebeforeshow', function(){
 	agregarDados(2,8);
 
 });
-$("#nivel3").on('pagecreate', function(){
+$("#nivel3").on('pagebeforeshow', function(){
 	agregarDados(3,12);
 
 });
-$("#nivel4").on('pagecreate', function(){
+$("#nivel4").on('pagebeforeshow', function(){
 	agregarDados(4,16);
 
 });
-$("#nivel5").on('pagecreate', function(){
+$("#nivel5").on('pagebeforeshow', function(){
 	agregarDados(5,20);
+});
+$("#juegos").on('pagebeforeshow', function(){
+	c=0;
 });
 
 $("#infosolicitada").on('pagecreate', function(){
