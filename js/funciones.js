@@ -2,6 +2,7 @@ var contenidoInicial;
 var idtema;
 var myScroll;
 var a = 0;
+	var a=0,b=0,c=0,verdadero=0;
 var block;
 var db = openDatabase('seguimiento', '1.0', 'seguimiento del bebe', 100 * 1024);
 document.addEventListener("deviceready", onDeviceReady, false);
